@@ -1,0 +1,262 @@
+/* Navbar */
+body {
+  background-color: #FFF6F3;
+}
+
+.navbar .nav-link {
+  color: #3B2A2A;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+  color: #E78A98;
+}
+
+.navbar .logo-wrapper .logo-top {
+  font-family: "LieToMe";
+  font-size: 32px;
+  color: #E78A98;
+  line-height: 1;
+}
+
+.navbar .right-menu i {
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navbar .right-menu i:hover {
+  color: #E78A98;
+}
+
+.navbar #mobileMenu .nav-link {
+  padding: 10px 0;
+  border-top: 1px solid #eee;
+}
+
+@media (min-width: 992px) {
+  #mobileMenu {
+    display: none !important;
+  }
+}
+
+
+/* Hero Section */
+
+.hero {
+  background: #FFF6F3;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero .hero-text h1 {
+  font-size: 64px;
+  font-weight: 700;
+  color: #3B2A2A;
+  line-height: 1.1;
+}
+
+.hero .hero-text p {
+  margin: 25px 0;
+  font-size: 18px;
+  color: #666;
+  max-width: 450px;
+}
+
+.hero .order-btn {
+  background: #E78A98;
+  color: white;
+  padding: 12px 35px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.hero .order-btn:hover {
+  background: #F6C5CC;
+}
+
+.hero .hero-img {
+  max-width: 420px;
+  animation: heroFloat 3.5s ease-in-out infinite;
+}
+
+@keyframes heroFloat {
+  0% {
+    transform: translateY(0) rotate(-6deg);
+  }
+
+  50% {
+    transform: translateY(-15px) rotate(-6deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(-6deg);
+  }
+}
+
+
+/* Footer */
+
+.footer {
+  background: #FFF6F3;
+}
+
+.footer .social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .social-icons a {
+  font-size: 22px;
+  margin: 0 10px;
+  color: #3B2A2A;
+  transition: .3s;
+}
+
+.footer .social-icons a:hover {
+  color: #E78A98;
+  transform: translateY(-3px);
+}
+
+.footer .footer-logo {
+  font-family: "LieToMe";
+  font-size: 34px;
+  color: #E78A98;
+}
+
+.footer .copyright {
+  font-size: 14px;
+  color: #3B2A2A;
+  opacity: .7;
+}
+
+
+/* Section Title */
+
+.section-title {
+  margin-bottom: 10px;
+}
+
+.section-title .title-bg {
+  font-family: "Rounda";
+  font-size: 70px;
+  color: #E78A98;
+  opacity: 0.15;
+  letter-spacing: 6px;
+}
+
+.section-title .title-main {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  font-family: "LieToMe";
+  font-size: 36px;
+  color: #3B2A2A;
+}
+
+
+/* Specialities */
+
+.specialities {
+  background: #F4E7D8;
+  padding: 80px 0;
+}
+
+.specialities .special-item {
+  width: 180px;
+  height: 180px;
+  margin: auto;
+  border-radius: 50%;
+  border: 2px solid #F6C5CC;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #FFF6F3;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.specialities .special-item i {
+  font-size: 36px;
+  color: #E78A98;
+  transition: 0.4s;
+}
+
+.specialities .special-item h6 {
+  color: #3B2A2A;
+  font-weight: 600;
+}
+
+.specialities .special-item:hover {
+  transform: translateY(-8px);
+  border-color: #E78A98;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.specialities .special-item:hover i {
+  transform: scale(1.2);
+}
+
+
+/* About */
+
+.about {
+  background: #FFF6F3;
+  padding: 90px 0;
+}
+
+.about .about-text h2 {
+  font-family: "Rounda";
+  font-size: 70px;
+  color: #E78A98;
+  opacity: 0.15;
+  letter-spacing: 6px;
+}
+
+.about .about-text h3 {
+  position: absolute;
+  left: 25%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  font-family: "LieToMe";
+  font-size: 36px;
+  color: #3B2A2A;
+  margin-bottom: 20px;
+}
+
+.about .about-text p {
+  color: #3B2A2A;
+  line-height: 1.8;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.about .about-text .about-btn {
+  background: #E78A98;
+  color: white;
+  border-radius: 30px;
+  padding: 10px 25px;
+  border: none;
+  transition: .3s;
+}
+
+.about .about-text .about-btn:hover {
+  background: #F6C5CC;
+}
+
+.about .about-img img {
+  width: 100%;
+  max-width: 500px;
+  animation: floatCake 4s ease-in-out infinite;
+}
+
+@keyframes floatCake {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
